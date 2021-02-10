@@ -46,13 +46,12 @@ submitButton.addEventListener('click', function() {
 clearButton.addEventListener('click', function () {
 
     const itemContainer = document.getElementById('item-container');
-    const itemText = document.getElementById('item-text');
 
-    //itemDiv is the div with the class of "show"
-    const itemDiv = document.querySelector('.show');
+    //This will help me clear all of the content inside of the item container. This loop says, as long as there are child nodes in the "itemContainer", remove the childnodes by using ".removeChild" from the "itemContainer." 
+    while (itemContainer.hasChildNodes()){
+        itemContainer.removeChild(itemContainer.firstChild);
+    }
 
-    itemDiv.remove();
-    
 
 })
 
