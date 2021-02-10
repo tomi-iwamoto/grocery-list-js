@@ -7,12 +7,13 @@ const removeMark = document.querySelector('.remove');
 
 submitButton.addEventListener('click', function() {
 
+
     const itemContainer = document.getElementById('item-container');
     var itemText = document.getElementById('item-text');
     //This is the content of whatever is typed into the input field
     var item = itemText.value;
 
-    //When the submit button is clicked, this function will create a new div element. And it will attach itself to the div with the id of "item-container"
+    //When submit button is clicked, this function will create a new div element. And it will attach itself to the div with the id of "item-container"
     var div = document.createElement('div');
     itemContainer.append(div);
     div.classList.add('show');
@@ -22,6 +23,7 @@ submitButton.addEventListener('click', function() {
 
     //After the submit button is clicked, the input field becomes empty again.
     itemText.value = ' ';
+
 
 
 
@@ -39,6 +41,7 @@ submitButton.addEventListener('click', function() {
 
     })
 
+
 })
 
 
@@ -49,7 +52,9 @@ clearButton.addEventListener('click', function () {
 
     //This will help me clear all of the content inside of the item container. This loop says, as long as there are child nodes in the "itemContainer", remove the childnodes by using ".removeChild" from the "itemContainer." 
     while (itemContainer.hasChildNodes()){
+
         itemContainer.removeChild(itemContainer.firstChild);
+
     }
 
 
