@@ -15,9 +15,19 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(255, 116, 116);
+}
+
+input {
+    border:green solid 2px;
+    border-radius: 7px;
+    padding:20px;
+}
+
 .item-container {
     width:50%;
-
 }
 
 .list-wrapper {
@@ -30,10 +40,26 @@ body {
 
 button {
     margin:20px;
-    padding:10px;
+    padding:7px 20px;
+    border:none;
+    border-radius: 10px;
+    background:rgb(170, 231, 216);
+    color:green;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
 
+button:hover {
+    cursor: pointer;
 }
 
 .show {
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color:green;
+    margin:20px;
+    text-align: center;
+    font-size: 18px;
 }

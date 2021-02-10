@@ -36,6 +36,7 @@ submitButton.addEventListener('click', function() {
     div.addEventListener('mouseover', function () {
 
         div.style.cursor = "pointer";
+
     })
 
 })
@@ -47,9 +48,10 @@ clearButton.addEventListener('click', function () {
     const itemContainer = document.getElementById('item-container');
     const itemText = document.getElementById('item-text');
 
-    const divWithShowClass = document.querySelector('.show');
+    //itemDiv is the div with the class of "show"
+    const itemDiv = document.querySelector('.show');
 
-    divWithShowClass.remove();
+    itemDiv.remove();
     
 
 })
