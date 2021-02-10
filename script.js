@@ -15,7 +15,7 @@ submitButton.addEventListener('click', function() {
 
     //When the submit button is clicked, this function will create a new div element. And it will attach itself to the div with the id of "item-container"
     let div = document.createElement('div');
-    itemContainer.append(div);
+    itemContainer.appendChild(div);
     div.classList.add('show');
 
     //This is the content of whatever is typed into the input field
@@ -23,6 +23,9 @@ submitButton.addEventListener('click', function() {
 
     //Whatever was typed into the input field will be the text of the new div
     div.innerText = item;
+
+    //After the submit button is clicked, the input field becomes empty again.
+    itemText.value = ' ';
 
 })
 
@@ -36,6 +39,8 @@ clearButton.addEventListener('click', function () {
     const divWithShowClass = document.querySelector('.show');
 
     divWithShowClass.remove();
+    
+
 })
 
 
