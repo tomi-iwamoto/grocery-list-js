@@ -9,13 +9,16 @@ submitButton.addEventListener('click', function() {
 
 
     const itemContainer = document.getElementById('item-container');
-    var itemText = document.getElementById('item-text');
+    let itemText = document.getElementById('item-text');
+    
     //This is the content of whatever is typed into the input field
-    var item = itemText.value;
+    let item = itemText.value;
 
     //When submit button is clicked, this function will create a new div element. And it will attach itself to the div with the id of "item-container"
-    var div = document.createElement('div');
+    let div = document.createElement('div');
     itemContainer.append(div);
+
+    //Here we add the class of "show" to the new div to make it appear on the screen
     div.classList.add('show');
 
     //Whatever was typed into the input field will be the text of the new div
